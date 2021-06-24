@@ -59,6 +59,7 @@ const CalendarGrid = ({startDay}) => {
           <CellWrapper
           key={dayItem.format('DDMMYYYY')}
            isWeekend={dayItem.day() === 6 || dayItem.day() === 0}
+           key={dayItem.unix()}
           >
             <RowInCell
             justifyContent={'flex-end'}>
